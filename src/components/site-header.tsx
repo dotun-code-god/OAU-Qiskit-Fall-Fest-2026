@@ -16,7 +16,8 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="site-container flex h-18 items-center justify-between gap-5">
         <Link to="/" className="flex min-w-0 items-center gap-3" aria-label="Qiskit Fall Fest OAU home">
-          <span className="brand-mark"><Atom aria-hidden="true" /></span>
+          {/* <span className="brand-mark"><Atom aria-hidden="true" /></span> */}
+          <img src="icon.svg" />
           <span className="font-display text-sm font-bold leading-tight sm:text-base">Qiskit Fall Fest <span className="text-primary">OAU</span></span>
         </Link>
         <nav className="scrollbar-none flex items-center gap-1 overflow-x-auto" aria-label="Main navigation">

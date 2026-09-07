@@ -79,9 +79,9 @@ export type TeamMember = { name: string; role: string; photo: string };
 
 export const team: TeamMember[] = [
   { name: "Dr Fadodun", role: "Faculty advisor", photo: "/team/dr-fadodun.jpg" },
-  { name: "Adesina Lekan", role: "Organising team", photo: "/team/Limitless.jpeg" },
-  { name: "Akinsunmade", role: "Organising team", photo: "/team/sunmade.jpeg" },
+  { name: "Lekan Adesina", role: "Organising team", photo: "/team/Limitless.jpeg" },
+  { name: "Temitope Akinsunmade", role: "Organising team", photo: "/team/sunmade.jpeg" },
   { name: "Blessing Agbor", role: "Organising team", photo: "/team/blessing.jpeg" },
-  { name: "Oyetunde Dotun", role: "Organising team", photo: "/team/codegod.jpg" },
+  { name: "Joseph Oyetunde", role: "Organising team", photo: "/team/codegod.jpg" },
   { name: "Olamide Lawal", role: "Organising team", photo: "/team/olamide_lawal.jpg" },
 ];

@@ -13,6 +13,32 @@ export function SiteFooter() {
           <Link to="/partnership" className="footer-link">Partnership <ArrowUpRight className="inline size-4" /></Link>
         </div>
       </div>
+      <div className="site-container footer-partners">
+        <p className="eyebrow text-signal">Hosted with</p>
+        <ul className="footer-logos">
+          <li>
+            <img
+              src="/OAU-logo.png"
+              alt="Obafemi Awolowo University crest — host institution, Ile-Ife, Nigeria"
+              title="Obafemi Awolowo University — host institution"
+            />
+          </li>
+          <li>
+            <img
+              src="/qiskit_white.png"
+              alt="Qiskit logo — IBM Quantum's open-source SDK and Fall Fest programme"
+              title="Qiskit — IBM Quantum"
+            />
+          </li>
+          <li>
+            <img
+              src="/icon.svg"
+              alt="Google Developer Groups on Campus OAU logo — community partner"
+              title="GDG on Campus OAU — community partner"
+            />
+          </li>
+        </ul>
+      </div>
     </footer>
   );
 }

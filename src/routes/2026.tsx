@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { YearSwitcher } from "@/components/year-switcher";
 import { TeamSection } from "@/components/team-section";
 import { hackathonTracks, hackathonWeeks, registerUrl, schools2026 } from "@/lib/events";
-import leadspace from "@/assets/qiskit-fall-fest-leadspace.jpg";
+import heroArt from "@/assets/qiskit-fall-fest-2026-hero.jpg";
 
 export const Route = createFileRoute("/2026")({ head: () => ({ meta: [
   { title: "Qiskit Fall Fest OAU 2026 | Young Nigerian Minds" }, { name: "description", content: "See the November 2026 Qiskit Fall Fest Plus at OAU: a four-week virtual hackathon plus programmes for secondary and university students." },
@@ -20,7 +20,7 @@ function Page() {
       <section className="site-container py-8">
         <YearSwitcher current="2026" />
         <div className="hero-2026">
-          <img src={leadspace} alt="Quantum science illustration" />
+          <div className="hero-art" aria-hidden="true"><img src={heroArt} alt="Qiskit Fall Fest 2026 badge with illustrated hummingbirds" /></div>
           <div className="relative z-10">
             <p className="eyebrow text-primary">Upcoming · Hackathon from 21 September · Fall Fest 27–28 November</p>
             <h1>Quantum for<br /><span>young Nigerian minds.</span></h1>
