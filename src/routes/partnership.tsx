@@ -1,0 +1,17 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ArrowDown, Building2, Handshake, Lightbulb, MonitorUp } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+
+const supportAreas: Array<{ icon: LucideIcon; title: string; detail: string }> = [
+  { icon: Building2, title: "Venue and programme delivery", detail: "Help create a focused, welcoming learning environment for two distinct audiences." },
+  { icon: MonitorUp, title: "Learning infrastructure", detail: "Support devices, connectivity, cloud access, notebooks, and technical delivery." },
+  { icon: Lightbulb, title: "Student experience", detail: "Enable transport, meals, learning materials, prizes, and memorable participation." },
+  { icon: Handshake, title: "Knowledge partnership", detail: "Contribute speakers, mentors, research perspective, or long-term pathways for learners." },
+];
+
+export const Route = createFileRoute("/partnership")({ head: () => ({ meta: [
+  { title: "Partner with Qiskit Fall Fest OAU" }, { name: "description", content: "Help expand access to practical quantum computing education for secondary and university students in Nigeria." },
+  { property: "og:title", content: "Partner with Qiskit Fall Fest OAU" }, { property: "og:description", content: "Support access, learning, and a growing quantum research culture in Nigeria." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
+]}), component: Page });
+
+function Page() { return <div className="partnership-page"><section className="site-container partnership-hero"><p className="eyebrow text-signal">Partnership · 2026</p><h1>Backing the minds that will shape what comes next.</h1><div className="grid gap-8 md:grid-cols-2"><p className="text-xl leading-8 text-paper/70">We are seeking partners who believe advanced technology education should reach students early, practically, and with a clear path forward.</p><div className="flex items-end gap-3 text-sm"><ArrowDown className="size-5 text-signal" />Explore where support matters</div></div></section><section className="section-pad bg-background text-foreground"><div className="site-container"><div className="grid gap-px bg-border md:grid-cols-2">{supportAreas.map(({ icon: Icon, title, detail })=><article className="support-block" key={title}><Icon /><h2>{title}</h2><p>{detail}</p></article>)}</div></div></section><section className="site-container py-24"><div className="funding-callout"><p className="eyebrow text-primary">Current need</p><p className="funding-number">₦1.5–2M</p><p className="max-w-lg leading-7 text-muted-foreground">The working estimate for delivering the 2026 programme. A final partner brief will detail confirmed costs, recognition, and reporting.</p></div><div className="mt-24 grid gap-8 border-t border-border pt-10 md:grid-cols-2"><h2 className="section-title">Start a partnership conversation.</h2><div><p className="leading-7 text-muted-foreground">The organising team’s confirmed partnership contact will be published here. Until then, this page provides the programme scope needed to begin internal consideration.</p><p className="mt-6 text-sm font-semibold text-primary">Contact details coming with the final partner pack.</p></div></div></section></div> }

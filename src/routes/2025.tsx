@@ -1,0 +1,12 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ArrowRight, CircleDashed } from "lucide-react";
+import { Link } from "@tanstack/react-router";
+import { Button } from "@/components/ui/button";
+import { YearSwitcher } from "@/components/year-switcher";
+
+export const Route = createFileRoute("/2025")({ head: () => ({ meta: [
+  { title: "Qiskit Fall Fest OAU 2025 | Momentum" }, { name: "description", content: "The developing archive for Qiskit Fall Fest OAU 2025—the bridge between our inaugural edition and our expanded 2026 programme." },
+  { property: "og:title", content: "Qiskit Fall Fest OAU 2025" }, { property: "og:description", content: "Momentum: the 2025 chapter of OAU’s quantum community." }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" },
+]}), component: Page });
+
+function Page() { return <div className="edition-2025"><section className="site-container py-8"><YearSwitcher current="2025" /><div className="hero-2025"><div className="orbit orbit-a" /><div className="orbit orbit-b" /><p className="eyebrow relative z-10">Archive in progress</p><h1 className="relative z-10">MOMENTUM<span>’25</span></h1><p className="relative z-10 max-w-xl text-lg leading-8">The middle chapter in a growing story—preserved honestly while its programme details, people, and outcomes are gathered.</p></div></section><section className="section-pad"><div className="site-container"><div className="grid gap-8 md:grid-cols-3">{[["01","Programme","Dates, sessions, and event format"],["02","People","Speakers, volunteers, and participants"],["03","Evidence","Photographs, outcomes, and recognitions"]].map(([n,t,d]) => <article className="pending-card" key={n}><span>{n}</span><CircleDashed /><h2>{t}</h2><p>{d}</p><small>Record pending</small></article>)}</div><div className="mt-24 grid gap-8 border-t border-current pt-10 md:grid-cols-[1fr_auto] md:items-end"><div><p className="eyebrow">What we know</p><h2 className="mt-4 max-w-3xl font-display text-4xl font-semibold sm:text-5xl">This edition belongs in the story—even before its archive is complete.</h2></div><Button asChild size="lg"><Link to="/2026">Continue to 2026 <ArrowRight /></Link></Button></div></div></section></div> }
