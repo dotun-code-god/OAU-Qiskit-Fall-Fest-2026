@@ -316,7 +316,7 @@ a {
   right: 0;
   top: 50%;
   transform: translateY(-80%);
-  height: min(58%, 38rem);
+  height: min(58%, 32rem);
   width: auto;
   aspect-ratio: 16/13;
   opacity: 1;
